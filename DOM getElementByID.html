@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin:0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="header" style="padding: 1rem 0">
+        <h1 id="mainHeading" style="margin:0">Fruit Shop</h1>
+    </div>
+    <div id="listSpace">
+        <h2 id = "listHeading">Fruits in Basket</h2>
+        <ul id="list">
+            <li>Banana</li>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Kiwi</li>
+        </ul>
+    </div>
+    <div id="thanks"></div>
+</body>
+
+<script>
+    let header = document.getElementById('header')
+    let list = document.getElementById('list')
+    let mainHeading = document.getElementById('mainHeading')
+    let listHeading = document.getElementById('listHeading')
+    let thanks = document.getElementById('thanks')
+
+    header.style.backgroundColor = 'green'
+    mainHeading.style.color = 'orange'
+    header.style.borderBottom = '1px solid orange'
+    listHeading.style.color = 'green'
+    thanks.innerHTML = '<p>Please visit us again</p>'
+</script>
+
+</html>
